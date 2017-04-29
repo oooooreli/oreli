@@ -1,0 +1,32 @@
+@media only screen and (min-width: $min-break-medium) {
+  /* GLOBAL */
+  @import 'min769_global';
+
+  /* HEADER  */
+  @import 'min769_header';
+
+  /* FOOTER  */
+  @import 'min769_footer';
+
+  /* HOME */
+  @import 'min769_home';
+
+  /* INTERNE */
+  @import 'min769_interne';
+}
+
+@media only screen and (min-width: $min-break-medium) {
+  /* empty */
+}
+
+@media only screen and (max-width: $max-break-medium) {
+  /* empty */
+}
+
+@media only screen and (min-width: $min-break-extra-large) {
+  /* empty */
+}
+
+@media only screen and (min-width: $min-break-medium) and (max-width: $max-break-extra-full-large) {
+  /* empty */
+}

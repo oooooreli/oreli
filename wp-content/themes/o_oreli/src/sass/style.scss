@@ -1,0 +1,95 @@
+/*!
+Theme Name: o_oreli
+Theme URI: http://underscores.me/
+Author: Orèli - Aurélie Aimard
+Author URI: http://underscores.me/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/*-------------------------------
+>>> TABLE OF CONTENTS:
+--------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+-------------------------------*/
+@import 'variables-site/variables-site';
+@import 'mixins/mixins-master';
+
+/*-------------------------------
+# Normalize
+-------------------------------*/
+@import 'base_theme/normalize';
+
+/*-------------------------------
+# Typography
+-------------------------------*/
+@import 'typography/typography';
+
+/*-------------------------------
+# Elements
+-------------------------------*/
+@import 'base_theme/elements/elements';
+
+/*-------------------------------
+# Forms
+-------------------------------*/
+@import 'base_theme/forms/forms';
+
+/*-------------------------------
+# Navigation
+-------------------------------*/
+@import 'base_theme/navigation/navigation';
+
+/*-------------------------------
+# Accessibility
+-------------------------------*/
+@import 'base_theme/modules/accessibility';
+
+/*-------------------------------
+# Alignments
+-------------------------------*/
+@import 'base_theme/modules/alignments';
+
+/*-------------------------------
+# Clearings
+-------------------------------*/
+@import 'base_theme/modules/clearings';
+
+/*-------------------------------
+# Widgets
+-------------------------------*/
+@import 'site/secondary/widgets';
+
+/*-------------------------------
+# Content
+-------------------------------*/
+@import 'site/site';
+
+/*-------------------------------
+# Infinite scroll
+-------------------------------*/
+@import 'base_theme/modules/infinite-scroll';
+
+/*-------------------------------
+# Media
+-------------------------------*/
+@import 'base_theme/media/media';
+@import 'site/site/site';
+@import 'site/screen/screen';

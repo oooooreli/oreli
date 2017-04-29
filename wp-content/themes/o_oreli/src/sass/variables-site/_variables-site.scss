@@ -1,0 +1,192 @@
+@import 'colors';
+@import 'typography';
+@import 'structure';
+
+::selection {
+  background: #e8e8e8;
+  color: #333;
+}
+
+/* PLACEHOLDER - EXTENDS */
+%coeurlight,
+%coeurdark {
+  color: #fff;
+  content: '\f004';
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.coeurdark {
+  color: $color-main-1;
+}
+
+.trait {
+  background-color: $color-main-1;
+  content: '';
+  display: block;
+  height: 5px;
+  margin: 30px auto;
+  width: 67px;
+}
+
+.arround {
+  border-radius: 50%;
+}
+
+.transition05 {
+  transition: all 0.5s ease;
+}
+
+.imgDeBorder {
+  padding: 5px;
+}
+
+%ariane {
+  color: #999;
+  font-size: 12px;
+  font-weight: 300;
+
+  a {
+    @extend %ariane;
+  }
+}
+
+.imgHover {
+  box-shadow: 2px 3px 11px 0 rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+%ibparent {
+  letter-spacing: -0.31em;
+  text-rendering: optimizespeed;
+}
+
+%ibchild {
+  letter-spacing: 1px;
+  text-rendering: auto;
+  word-spacing: normal;
+}
+
+.ghost-wrap {
+  letter-spacing: -0.31em;
+}
+
+.ghost-wrap::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.ghost-wrap-content {
+  display: inline-block;
+  letter-spacing: normal;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.fclear {
+  clear: both;
+  margin: 0;
+  padding: 0 !important;
+}
+
+%transition-bg {
+  transition: background-color 0.5s, transform 0.5s;
+}
+
+%transition-all {
+  transition: all 0.3s;
+}
+
+%chevron {
+  content: '\f061';
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 18px;
+  font-weight: 300;
+  margin-left: 10px;
+}
+
+%lora-i {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+%titre-forts {
+  color: #323232;
+  display: block;
+  font-family: $font-title;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 29px;
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &::after {
+    background-color: $color-main-1;
+    content: ' ';
+    display: block;
+    height: 5px;
+    margin: 20px auto 30px;
+    width: 80px;
+  }
+}
+
+%boder {
+  content: url('../img/borderTitle.png');
+  display: block;
+  margin: 0 auto;
+}
+
+%bgcover {
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* version standardisée */
+}
+
+%liststyle {
+  ul {
+    list-style: none;
+    margin: 0 0 10px;
+    padding: 0;
+
+    li {
+      font-size: 16px;
+      line-height: 17px;
+      padding: 10px 0;
+
+      &::before {
+        content: '\f00c';
+        font: normal normal normal 14px/1 FontAwesome;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+%liststyleleft {
+  ul {
+    list-style: none;
+    margin: 0 0 10px;
+    padding: 0;
+
+    li {
+      font-size: 16px;
+      line-height: 17px;
+      padding: 10px 0;
+      // color: #5e5e5e;
+
+      &::after {
+        content: '\f00c';
+        font: normal normal normal 14px/1 FontAwesome;
+        margin-left: 10px;
+      }
+    }
+  }
+}

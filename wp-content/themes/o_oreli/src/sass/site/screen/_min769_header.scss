@@ -1,0 +1,150 @@
+/* Header
+------------------------- */
+.site-header {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: $hauteur-menu-full;
+  left: 0;
+  line-height: $hauteur-menu-full;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  top: 0;
+  z-index: 1;
+
+  > div {
+    margin: 0 30px;
+  }
+
+  &--logo {
+    float: left;
+  }
+
+  &--menu {
+    float: right;
+  }
+}
+
+/* Slider
+------------------------- */
+.slider {
+  &--contenu {
+    color: $color-main-1;
+    font-family: $font-slider;
+    font-size: 40px;
+    left: 0;
+    margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    transform: translateY(-50%);
+
+    p {
+      background-color: #fff;
+      display: inline;
+    }
+
+    .btn {
+      background-color: $color-main-1;
+      border-color: $color-main-1;
+      color: #fff;
+      display: inline-block;
+      font-size: 16px;
+      padding: 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}
+
+/*
+ * Menu
+**/
+#site-navigation,
+#site-navigation-switcher {
+  li {
+    margin-bottom: 0;
+
+    a {
+      color: $color-text-menu;
+      font-family: $font-menu;
+      font-size: $font-size-menu;
+      font-weight: 300;
+      padding: 0 10px;
+      text-transform: uppercase;
+      // height: $hauteur-menu-full;
+    }
+
+    &.current-menu-item::after {
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  #primary-menu {
+    > li > a {
+      padding-bottom: 40px;
+    }
+
+    > li > ul {
+      border-top: 1px solid $color-main-1;
+
+      ul {
+        border-left: 1px solid $color-main-1;
+        top: -25px;
+        // margin-left: 25px;
+      }
+    }
+  }
+
+  /* sous menu */
+  ul ul.sub-menu {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0;
+
+    li {
+      text-align: left;
+      // border: 1px solid blue;
+      vertical-align: bottom;
+    }
+
+    a {
+      color: $color-text-menu;
+      font-size: $font-size-menu - 3px;
+      height: auto;
+      line-height: $font-size-menu;
+      padding: 20px 10px;
+      text-transform: uppercase;
+      vertical-align: middle;
+
+      &:hover::before {
+        // content: '> ';
+      }
+
+      &::before {
+        // content: ' ';
+        // width: 15px;
+        // height: 15px;
+        // padding-right: 12px;
+        // display: inline-block;
+      }
+    }
+  }
+}
+
+#primary-menu::after {
+  background-color: $color-main-1;
+  bottom: -3px;
+  content: '';
+  display: block;
+  height: 5px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 67px;
+}

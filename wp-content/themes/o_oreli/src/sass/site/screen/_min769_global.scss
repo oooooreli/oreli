@@ -1,0 +1,51 @@
+/* structure  */
+.container {
+  padding: 0;
+  // padding: $espacements;
+}
+
+/* footer */
+#colophon {
+  [class*='site-footer-'] {
+    padding: 30px 4%;
+  }
+
+  > div {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  .site-footer {
+    &-rs {
+      margin: 0;
+      padding: 0;
+    }
+
+    &-logo,
+    &-adresse {
+      display: inline-block;
+      vertical-align: middle;
+      width: 49%;
+    }
+
+    &-logo {
+      text-align: left;
+
+      img {
+        float: left;
+        margin-right: 20px;
+      }
+
+      a,
+      p {
+        // display: inline-block;
+        // vertical-align: middle;
+      }
+    }
+
+    &-adresse {
+      text-align: right;
+    }
+  }
+}

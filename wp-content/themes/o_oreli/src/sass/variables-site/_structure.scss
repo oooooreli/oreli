@@ -1,0 +1,31 @@
+/* BREAK POINT */
+$break-tiny: 544px;
+$min-break-tiny: $break-tiny + 1px;
+$max-break-tiny: $break-tiny;
+$break-small: 768px;
+$min-break-small: $break-small + 1px;
+$max-break-small: $break-small;
+$break-medium: 1024px;
+$min-break-medium: $break-medium + 1px;
+$max-break-medium: $break-medium;
+$break-large: 1180px;
+$min-break-large: $break-large + 1px;
+$max-break-large: $break-large;
+$break-extra-large: 1440px;
+$min-break-extra-large: $break-extra-large + 1px;
+$max-break-extra-large: $break-extra-large;
+$break-extra-full-large: 1680px;
+$min-break-extra-full-large: $break-extra-full-large + 1px;
+$max-break-extra-full-large: $break-extra-full-large;
+
+/* STRUCTURE */
+$size-site-main: 100%;
+$size-site-main-max: 1280px;
+$size-site-main-max-full: 1680px;
+$size-site-sidebar: 35%;
+$size-site-main-sidebar: $size-site-main - $size-site-sidebar;
+$hauteur-menu-small: 60px;
+$hauteur-menu-full: 118px;
+$submenu-top: 90px;
+$espacements: 13px 13px;
+$espacement: 13px;

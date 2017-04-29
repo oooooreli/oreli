@@ -1,0 +1,45 @@
+@mixin shadowbox() {
+  box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.2);
+}
+
+@mixin noshadowbox() {
+  box-shadow: initial;
+}
+
+@mixin shadowboxvar($value) {
+  box-shadow: $value;
+}
+
+@mixin doubleborder($bg) {
+  box-shadow: 0 0 0 1px lighten($bg, 20%), 0 0 0 5px $bg, 0 0 0 6px lighten($bg, 20%);
+}
+
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+  font-size: ($sizeValue * 16) * 1px;
+  font-size: $sizeValue * 1rem;
+}
+// Center block
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+// Clearfix
+@mixin clearfix() {
+  content: '';
+  display: table;
+  table-layout: fixed;
+}
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+  clear: both;
+}
+
+@mixin go($value) {
+  animation: $value 1.5s; /* IE 10+, Fx 29+ */
+}
+
+@mixin bounce($value) {
+  animation: bounce $value ease-out;
+}

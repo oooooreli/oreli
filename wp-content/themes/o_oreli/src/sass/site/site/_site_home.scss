@@ -1,0 +1,38 @@
+#page {
+  overflow: hidden;
+}
+
+/* Slider
+------------------------- */
+.slider {
+  /* empty */
+}
+
+
+
+/* les sections
+------------------------- */
+
+
+%border {
+  border-color: $color-border-light;
+  border-style: solid;
+}
+
+[class*='section--']  .o_title {
+  @extend %titre-forts;
+}
+
+.home {
+  p {
+    margin: 0;
+  }
+
+  .section {
+    &--intro {
+      border-radius: 50%;
+      opacity: 1;
+ 
+    }
+  }
+}

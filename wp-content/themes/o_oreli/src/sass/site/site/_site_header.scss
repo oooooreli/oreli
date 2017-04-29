@@ -1,0 +1,59 @@
+/* Header
+------------------------- */
+.site-header {
+  background-color: $color-main-2;
+  color: #fff;
+  height: $hauteur-menu-small;
+  line-height: $hauteur-menu-small;
+
+  > div {
+    text-align: left;
+    vertical-align: middle;
+
+    a {
+      display: block;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+  }
+
+  &-menu {
+    float: right;
+    padding: 0 20px;
+
+    #site-navigation .btn.menu-item a {
+      background-color: transparent;
+      border: 1px solid $color-border-light;
+      display: inline-block;
+      font-size: 15px;
+      line-height: initial;
+      padding: 19px 21px;
+      text-decoration: none;
+      // color: #ffffff;
+      text-transform: none;
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+/* INFOS HEADER */
+
+/* MENU */
+
+#site-navigation,
+#site-navigation-switcher {
+  li {
+    &.up {
+      a {
+        &::after {
+          @extend %chevron;
+        }
+      }
+    }
+  }
+}

@@ -1,24 +1,45 @@
 /* Header
 ------------------------- */
 .site-header {
-  background-color: $color-main-2;
-  color: #fff;
-  height: $hauteur-menu-small;
-  line-height: $hauteur-menu-small;
+  background-color: #f9f9f6;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    .ghost-wrap {
+          height: 80vh;
+    }
+    .fa {
+      font-size: 30px;
+      padding:30px 0 0 30px;
+    }
+  &--logo {
+    text-align: right;
 
+    .main_title {
+    font-family: pacifico;
+    font-size: 65px;
+    line-height: 65px;
+    font-weight: 300;
+    }
+    .o_title {
+      @extend %titre-forts;
+      font-size: 30px;
+    line-height: 30px;
+    text-align: right;
+    }
+  }
   > div {
-    text-align: left;
-    vertical-align: middle;
-
     a {
       display: block;
     }
-
     img {
       vertical-align: middle;
     }
   }
-
   &-menu {
     float: right;
     padding: 0 20px;
@@ -45,8 +66,7 @@
 
 /* MENU */
 
-#site-navigation,
-#site-navigation-switcher {
+#site-navigation, #site-navigation-switcher {
   li {
     &.up {
       a {

@@ -83,7 +83,6 @@
   display: inline-block;
   letter-spacing: normal;
   vertical-align: middle;
-  width: 100%;
 }
 
 .fclear {
@@ -115,26 +114,22 @@
 }
 
 %titre-forts {
-  color: #323232;
+  color: #000066;
   display: block;
   font-family: $font-title;
-  font-size: 29px;
   font-style: normal;
-  font-weight: 600;
-  letter-spacing: 6px;
-  line-height: 29px;
-  margin-top: 20px;
+  font-weight: 300;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: none;
 
-  &::after {
-    background-color: $color-main-1;
-    content: ' ';
-    display: block;
-    height: 5px;
-    margin: 20px auto 30px;
-    width: 80px;
-  }
+  // &::after {
+  //   background-color: $color-main-1;
+  //   content: ' ';
+  //   display: block;
+  //   height: 5px;
+  //   margin: 20px auto 30px;
+  //   width: 80px;
+  // }
 }
 
 %boder {

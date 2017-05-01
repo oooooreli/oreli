@@ -1,63 +1,25 @@
 /* Header
 ------------------------- */
 .site-header {
-  background-color: rgba(0, 0, 0, 0.3);
-  height: $hauteur-menu-full;
-  left: 0;
-  line-height: $hauteur-menu-full;
-  margin: 0;
   padding: 0;
-  position: absolute;
-  right: 0;
-  text-align: left;
-  top: 0;
-  z-index: 1;
-
-  > div {
-    margin: 0 30px;
-  }
 
   &--logo {
-    float: left;
-  }
+        .main_title {
+    font-size: 95px;
+    line-height: 95px;
 
-  &--menu {
-    float: right;
+    }
+    .o_title {
+      font-size: 30px;
+    line-height: 30px;
+    }
+
   }
 }
 
 /* Slider
 ------------------------- */
-.slider {
-  &--contenu {
-    color: $color-main-1;
-    font-family: $font-slider;
-    font-size: 40px;
-    left: 0;
-    margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
-    position: absolute;
-    right: 0;
-    text-align: center;
-    text-transform: uppercase;
-    transform: translateY(-50%);
 
-    p {
-      background-color: #fff;
-      display: inline;
-    }
-
-    .btn {
-      background-color: $color-main-1;
-      border-color: $color-main-1;
-      color: #fff;
-      display: inline-block;
-      font-size: 16px;
-      padding: 10px;
-      text-decoration: none;
-      text-transform: uppercase;
-    }
-  }
-}
 
 /*
  * Menu

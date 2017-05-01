@@ -105,16 +105,10 @@ add_action( 'widgets_init', 'o_oreli_widgets_init' );
  * Enqueue scripts and styles.
  */
 function o_oreli_scripts() {
-// wp_enqueue_style( 'unslider', 'https://cdnjs.cloudflare.com/ajax/libs/unslider/2.0.3/css/unslider.css', false  );
-// wp_enqueue_script( 'unslider-min', 'https://cdnjs.cloudflare.com/ajax/libs/unslider/2.0.3/js/unslider-min.js', array(), null, true );
-// wp_enqueue_script( 'scrollTo', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js', array(), null, true );
-// wp_enqueue_script( 'sticky', 'https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.js', array(), null, true );
-// wp_enqueue_script( 'jquery-ui', 'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js', array(), null, true );
-
-// wp_enqueue_script( 'scrollify', 'https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.14/jquery.scrollify.min.js', array(), null, true );
 
 wp_enqueue_script( 'scripts-global', get_template_directory_uri() . '/dist/js/scripts.min.js', array('customize-preview'), null, true );
 wp_enqueue_style( 'o_oreli-style-dep', get_template_directory_uri(). '/dist/css/depandancies.min.css', false  );
+wp_enqueue_style( 'fontawesome','https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', false  );
 wp_enqueue_style( 'o_oreli-style-min', get_template_directory_uri(). '/dist/css/style.css', false  );
 wp_enqueue_style( 'o_oreli-style', get_stylesheet_uri() );
 

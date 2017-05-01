@@ -15,7 +15,6 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Roboto:300,400,700" rel="stylesheet">
 
 <?php wp_head();
 global $logo_blanc;
@@ -30,9 +29,25 @@ global $logo_couleur;
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'o_oreli' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-			<div class="site-header--logo">
-				<a href="<?php echo esc_url( home_url( '' ) ); ?>" rel="home"><img src="<?php if($logo_blanc) { echo $logo_blanc; }?>" height="" width="" alt="Logo o_oreli "/></a>
+			<div class="ghost-wrap">
+
+		<div class="site-header--logo ghost-wrap-content">
+				<h2 class="main_title">aurélie aimard</h2>
+				<h1 class="o_title">intégratrice<br>web</h1>
+				<i class="fa fa-pinterest" aria-hidden="true"></i>
+				<i class="fa fa-twitter" aria-hidden="true"></i>
+				<i class="fa fa-linkedin" aria-hidden="true"></i>
 			</div>
+			</div>
+
+		<div class="container demo-1">
+			<div class="content">
+				<div id="large-header" class="large-header">
+					<canvas id="demo-canvas"></canvas>
+				</div>
+			</div>
+			<!-- Related demos -->
+		</div><!-- /container -->
 			<div class="site-header--menu">
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( '', 'o_oreli' ); ?><span></span><span></span><span></span></button>

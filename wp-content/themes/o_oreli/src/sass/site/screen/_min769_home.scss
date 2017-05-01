@@ -10,22 +10,10 @@
 
 /* les sections
 ------------------------- */
-
-.col-3 {
-  letter-spacing: -0.31em;
-  text-rendering: optimizespeed;
-
-  > div {
-    display: inline-block;
-    letter-spacing: 1px;
-    margin: 0 4%;
-    text-rendering: auto;
-    vertical-align: top;
-    width: 28.1%;
-    word-spacing: normal;
-  }
+[class*='section--'] .o_title {
+  font-size: 72px;
+  line-height: 72px;
 }
-
 .gridsection {
   display: table;
   vertical-align: top;
@@ -36,27 +24,14 @@
     width: 50%;
   }
 }
-
 .home {
-  [class*='section--'] {
-    /*   padding-bottom: 130px;
-  padding-top: 130px; */
-  }
-
   .section {
-    &--intro {
-      .solution {
-        &--img {
-          /* empty */
-        }
-
-        &--contenu {
-          /* empty */
-        }
-
-        &--btn {
-          /* empty */
-        }
+    margin: 0 40px;
+    padding: 40px;
+      &--portfolio {
+      .projet {
+        width: 33.33%;
+        height: 310px;
       }
     }
   }

@@ -29,32 +29,34 @@ global $logo_couleur;
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'o_oreli' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
+
+
+
 			<div class="ghost-wrap">
 
 		<div class="site-header--logo ghost-wrap-content">
 				<h2 class="main_title">aurélie aimard</h2>
-				<h1 class="o_title">intégratrice<br>web</h1>
-				<i class="fa fa-pinterest" aria-hidden="true"></i>
-				<i class="fa fa-twitter" aria-hidden="true"></i>
+				<div class="site-header--logo--details">
+				<h1 class="o_title">intégratrice<span>web.</span></h1>
 				<i class="fa fa-linkedin" aria-hidden="true"></i>
+				<i class="fa fa-twitter" aria-hidden="true"></i>
+				<i class="fa fa-pinterest" aria-hidden="true"></i>
+				</div>
 			</div>
 			</div>
 
-		<div class="container demo-1">
-			<div class="content">
-				<div id="large-header" class="large-header">
-					<canvas id="demo-canvas"></canvas>
-				</div>
-			</div>
-			<!-- Related demos -->
-		</div><!-- /container -->
-			<div class="site-header--menu">
-					<nav id="site-navigation" class="main-navigation" role="navigation">
-						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( '', 'o_oreli' ); ?><span></span><span></span><span></span></button>
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'Principal' ) ); ?>
-					</nav><!-- #site-navigation -->
-			</div>
 </header><!-- #masthead -->
+
+
+
+			<div class="site-header--menu">
+				<div class="menu">
+						<span></span>
+						<span></span>
+						<span></span>
+				</div>					
+			</div>
+
 
 <?php if ( is_front_page() || is_home() ) : ?>
 

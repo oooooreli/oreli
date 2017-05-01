@@ -2,111 +2,47 @@
 ------------------------- */
 .site-header {
   padding: 0;
+&--menu {
+    top: 50px;
+    left: 50px;
 
+}
   &--logo {
-        .main_title {
-    font-size: 95px;
-    line-height: 95px;
-
+    position:relative;
+    &--details {
+      text-align: left;
+    position: absolute;
+    right: -35%;
+    &:before {
+      content:"";
+      display:  block;
+      width:1px;
+      height:60px;
+      background-color: $color-main-1 ;
+        transform: rotate(-35deg);
+        position: absolute; 
+        top:-40px;
+        left:-30px;
     }
-    .o_title {
-      font-size: 30px;
-    line-height: 30px;
+      * {
+        text-align: left;
+      }
     }
-
+    .main_title {
+      font-size: 95px;
+      line-height: 95px;
+    }
+    .o_title {text-align: left; }
+  }
+  .fa {
+    font-size: 30px;
+    padding: 30px 10px 0 0;
   }
 }
 
 /* Slider
 ------------------------- */
 
-
 /*
  * Menu
 **/
-#site-navigation,
-#site-navigation-switcher {
-  li {
-    margin-bottom: 0;
-
-    a {
-      color: $color-text-menu;
-      font-family: $font-menu;
-      font-size: $font-size-menu;
-      font-weight: 300;
-      padding: 0 10px;
-      text-transform: uppercase;
-      // height: $hauteur-menu-full;
-    }
-
-    &.current-menu-item::after {
-      bottom: 0;
-      left: 0;
-      position: absolute;
-      right: 0;
-    }
-  }
-
-  #primary-menu {
-    > li > a {
-      padding-bottom: 40px;
-    }
-
-    > li > ul {
-      border-top: 1px solid $color-main-1;
-
-      ul {
-        border-left: 1px solid $color-main-1;
-        top: -25px;
-        // margin-left: 25px;
-      }
-    }
-  }
-
-  /* sous menu */
-  ul ul.sub-menu {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 0;
-
-    li {
-      text-align: left;
-      // border: 1px solid blue;
-      vertical-align: bottom;
-    }
-
-    a {
-      color: $color-text-menu;
-      font-size: $font-size-menu - 3px;
-      height: auto;
-      line-height: $font-size-menu;
-      padding: 20px 10px;
-      text-transform: uppercase;
-      vertical-align: middle;
-
-      &:hover::before {
-        // content: '> ';
-      }
-
-      &::before {
-        // content: ' ';
-        // width: 15px;
-        // height: 15px;
-        // padding-right: 12px;
-        // display: inline-block;
-      }
-    }
-  }
-}
-
-#primary-menu::after {
-  background-color: $color-main-1;
-  bottom: -3px;
-  content: '';
-  display: block;
-  height: 5px;
-  left: 0;
-  margin: 0 auto;
-  position: absolute;
-  right: 0;
-  width: 67px;
-}

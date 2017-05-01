@@ -25,14 +25,25 @@
   }
 }
 .home {
+  }
   .section {
-    margin: 0 40px;
-    padding: 40px;
+        padding: 50px;
+    &--apropos {
+            p {
+        font-size:18px;
+        line-height: 25px;
+        letter-spacing:1px;
+
+      }
+      .container-small {
+        width: 50%;
+        margin:0 auto;
+      }
+    }
       &--portfolio {
       .projet {
         width: 33.33%;
-        height: 310px;
+        height: 33.33vh;
       }
     }
   }
-}

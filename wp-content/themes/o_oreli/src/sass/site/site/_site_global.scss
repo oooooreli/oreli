@@ -183,7 +183,6 @@ h5 {
   margin: 0 auto;
   max-width: $size-site-main-max;
   padding: 0;
-  padding: $espacements;
   position: relative;
   // overflow: auto;
   width: $size-site-main;
@@ -193,15 +192,10 @@ h5 {
     max-width: $size-site-main-max-full;
     width: $size-site-main;
   }
+
 }
 
-.paddingInner {
-  padding: 0 !important;
 
-  > div {
-    padding: $espacements;
-  }
-}
 
 
 

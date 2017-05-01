@@ -119,17 +119,9 @@
   font-family: $font-title;
   font-style: normal;
   font-weight: 300;
-  text-align: center;
+  text-align: right;
   text-transform: none;
 
-  // &::after {
-  //   background-color: $color-main-1;
-  //   content: ' ';
-  //   display: block;
-  //   height: 5px;
-  //   margin: 20px auto 30px;
-  //   width: 80px;
-  // }
 }
 
 %boder {

@@ -38,9 +38,7 @@ global $logo_couleur;
 				<h2 class="main_title">aurélie aimard</h2>
 				<div class="site-header--logo--details">
 				<h1 class="o_title">intégratrice<span>web.</span></h1>
-				<i class="fa fa-linkedin" aria-hidden="true"></i>
-				<i class="fa fa-twitter" aria-hidden="true"></i>
-				<i class="fa fa-pinterest" aria-hidden="true"></i>
+				<?php include ('template-parts/__rs.php') ?>
 				</div>
 			</div>
 			</div>
@@ -55,6 +53,16 @@ global $logo_couleur;
 						<span></span>
 						<span></span>
 				</div>					
+			</div>
+			<div class="site-header--menu-main">
+			<div class="ghost-wrap">
+
+		<div class="ghost-wrap-content">
+					<div class="row">
+						<div class="col col-50"><?php include ('template-parts/__rs.php') ?></div>
+						<div class="col col-50"><?php wp_nav_menu( array( 'theme_location' => 'principal' ) ); ?></div>
+					</div>
+				</div></div>
 			</div>
 
 

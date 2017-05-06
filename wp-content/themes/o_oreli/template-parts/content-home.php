@@ -36,4 +36,8 @@
 
 <section class="section section--contact">
   <h2 class="o_title">contact</h2>
+  <p>
+  	<?php echo do_shortcode( '[formidable id=3]' );
+  	?>
+  </p>
 </section>

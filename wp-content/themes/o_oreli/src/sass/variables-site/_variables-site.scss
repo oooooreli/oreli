@@ -70,6 +70,8 @@
 
 .ghost-wrap {
   letter-spacing: -0.31em;
+  // width:100%;
+  height:100%;
 }
 
 .ghost-wrap::before {
@@ -80,6 +82,8 @@
 }
 
 .ghost-wrap-content {
+    width:100%;
+  // height:100%;
   display: inline-block;
   letter-spacing: normal;
   vertical-align: middle;

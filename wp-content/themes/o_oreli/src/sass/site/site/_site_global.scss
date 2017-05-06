@@ -1,9 +1,7 @@
 .none {
   display: none !important;
 }
-
-#delayelem,
-.delayelem {
+#delayelem, .delayelem {
   display: block;
   filter: alpha(opacity = 25);
   opacity: 0;
@@ -22,53 +20,38 @@ img[data-lazy-src] {
   /* we set the opacity to 0 */
   opacity: 0;
 }
-
-a,
-a:hover,
-a:focus,
-a:active {
+a, a:hover, a:focus, a:active {
   outline: none;
   outline-style: none;
 }
 
 /* Image without 'data' attribute is (or becomes) visible */
 img {
-  opacity: 1;
-
-  /* prepare the future animation */
+  opacity: 1;  /* prepare the future animation */
   transition: opacity 0.5s linear 0.2s;/* we set the opacity to 1 to do the magic */
 }
-
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1, h2, h3, h4, h5 {
   font-style: normal;
 }
-
 @keyframes sk-scaleout {
   0% {
     transform: scale(0);
   }
-
   100% {
     opacity: 0;
     transform: scale(1);
   }
 }
 
-
-
 /* titre widget */
 .widget-title {
+
   /* empty */
 }
 
 /* Elements
 ------------------------- */
-%btn,
-.btn {
+%btn, .btn {
   border: 1px solid $color-border-button;
   border-radius: 4px;
   display: inline-block;
@@ -80,16 +63,15 @@ h5 {
   text-transform: uppercase;
 
   &.action {
+
     /* empty */
   }
 }
 
 /* Formulaire
 ------------------------- */
-#content .section-form,
-#primary .entry-content {
-  input,
-  button {
+#content .section-form, #primary .entry-content {
+  input, button {
     @extend %transition-bg;
     background-color: transparent;
     border: 2px solid #fff;
@@ -103,28 +85,22 @@ h5 {
     padding: 0 15px;
     text-align: left;
   }
-
   input:focus {
     @extend %transition-bg;
     background-color: $color-main-2;
   }
-
-  .frm_radio,
-  .frm_checkbox {
+  .frm_radio, .frm_checkbox {
     label {
       font-size: 18px;
     }
   }
-
-  input[type='radio'],
-  input[type='checkbox'] {
+  input[type='radio'], input[type='checkbox'] {
     background-color: transparent;
     display: inline-block;
     height: 15px;
     margin-right: 10px;
     vertical-align: middle;
   }
-
   button[type='submit'] {
     background-color: $color-main-1;
     border: 0;
@@ -139,18 +115,15 @@ h5 {
   }
 
   /* Spécial */
-
   .notif {
     color: #999;
     font-size: 12px;
     padding: 30px 0;
     text-align: right;
   }
-
   .jump {
     margin-top: 30px;
   }
-
   .custom-label > .frm_primary_label {
     background-color: #eee;
     background-position: center right;
@@ -168,10 +141,8 @@ h5 {
     text-transform: uppercase;
   }
 }
-
 #primary .entry-content {
-  input,
-  button {
+  input, button {
     background-color: $color-main-2;
   }
 }
@@ -192,13 +163,7 @@ h5 {
     max-width: $size-site-main-max-full;
     width: $size-site-main;
   }
-
 }
-
-
-
-
-
 
 
 /* main
@@ -206,23 +171,16 @@ h5 {
 
 /* Pagination
 ------------------------- */
-.archive [class*='pagination'],
-.archive.woocommerce [class*='pagination'] {
+.archive [class*='pagination'], .archive.woocommerce [class*='pagination'] {
   clear: both;
   margin-bottom: 20px;
   margin-top: 20px;
   text-align: center;
 }
-
-.archive [class*='pagination'] .inactive,
-.archive.woocommerce [class*='pagination'] .inactive {
+.archive [class*='pagination'] .inactive, .archive.woocommerce [class*='pagination'] .inactive {
   color: $color-text-main;
 }
-
-.archive [class*='pagination'] a,
-.archive [class*='pagination'] span,
-.archive.woocommerce [class*='pagination'] a,
-.archive.woocommerce [class*='pagination'] span {
+.archive [class*='pagination'] a, .archive [class*='pagination'] span, .archive.woocommerce [class*='pagination'] a, .archive.woocommerce [class*='pagination'] span {
   border: 0;
   color: #000;
   display: inline-block;
@@ -235,26 +193,18 @@ h5 {
   text-decoration: none;
   width: 35px;
 }
-
-.archive [class*='pagination'] a:hover,
-.archive.woocommerce [class*='pagination'] a:hover {
+.archive [class*='pagination'] a:hover, .archive.woocommerce [class*='pagination'] a:hover {
   background-color: #ebdca2;
   color: #fff;
 }
-
-.archive [class*='pagination'] a,
-.archive.woocommerce [class*='pagination'] a {
+.archive [class*='pagination'] a, .archive.woocommerce [class*='pagination'] a {
   background-color: #fff;
 }
-
-.archive [class*='pagination'] span.current,
-.archive.woocommerce [class*='pagination'] span.current {
+.archive [class*='pagination'] span.current, .archive.woocommerce [class*='pagination'] span.current {
   background: $color-main-1;
   color: #fff;
 }
-
-.archive.woocommerce nav.woocommerce-pagination ul li,
-.archive.woocommerce nav.woocommerce-pagination ul {
+.archive.woocommerce nav.woocommerce-pagination ul li, .archive.woocommerce nav.woocommerce-pagination ul {
   border: 0;
   border-right: 0;
 }

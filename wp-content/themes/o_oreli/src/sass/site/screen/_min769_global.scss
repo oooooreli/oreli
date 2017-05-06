@@ -3,6 +3,29 @@
   padding: 0;
 }
 
+.row {
+  letter-spacing: -0.31em;
+  text-rendering: optimizespeed;
+
+  .col {
+    display: inline-block;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-rendering: auto;
+
+    &-50 {
+      width: 50%;
+    }
+    &-25 {
+      width: 25%;
+    }
+    &-33 {
+      width: 33%;
+    }
+  }
+}
+
+
 /* footer */
 #colophon {
   [class*='site-footer-'] {

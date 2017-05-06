@@ -196,6 +196,7 @@ add_action( 'customize_register', 'y_ceren_customize_register_add' );
  * Emplacement MENU
  */
 register_nav_menus( array(
+        'principal' => 'principal',
         'menu_footer' => 'menu de pied de page',
     ) );
 

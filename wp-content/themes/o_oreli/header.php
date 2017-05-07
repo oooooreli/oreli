@@ -48,22 +48,26 @@ global $logo_couleur;
 
 
 			<div class="site-header--menu">
-				<div class="menu">
+				<div class="o_nav-icon">
 						<span></span>
 						<span></span>
 						<span></span>
 				</div>					
 			</div>
-			<div class="site-header--menu-main">
-			<div class="ghost-wrap">
-
+<div class="site-header--menu-main">
+	<div class="ghost-wrap">
 		<div class="ghost-wrap-content">
-					<div class="row">
-						<div class="col col-50"><?php include ('template-parts/__rs.php') ?></div>
-						<div class="col col-50"><?php wp_nav_menu( array( 'theme_location' => 'principal' ) ); ?></div>
-					</div>
-				</div></div>
+			<div class="row middle">
+				<?php wp_nav_menu( array( 'theme_location' => 'principal' ) ); ?>
 			</div>
+			<?php include ('template-parts/__rs.php') ?>
+			<div class="rappel"><p class="rappel--logo">aurélie</p>
+				<p><strong>intégratrice web.</strong></p>
+			</div>
+				
+		</div>
+	</div>
+</div>
 
 
 <?php if ( is_front_page() || is_home() ) : ?>

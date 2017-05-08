@@ -54,30 +54,31 @@
     .fa {
       color: #ffff99;
       font-size: 30px;
-      margin:40px 10px 0;
+      margin: 40px 10px 0;
     }
     .rappel {
-     
-       color: #ffff99;
-       
-       &--logo {
-         font-family: $font-logo;
-             font-size: 18px;
-    line-height: 18px;
-         // line-height: 35px;
+      color: #ffff99;
 
-       }
+      &--logo a {
+        font-family: $font-logo;
+        font-size: 22px;
+        line-height: 22px;
+        margin: 13px 0 0px 0;
+        color: #ffff99;
+        text-decoration: none;
+        display: block;
+      }
       strong {
         font-family: $font-secondary;
         font-weight: 300;
-        font-size: 15px;
+        font-size: 18px;
       }
     }
   }
   &--menu {
     position: fixed;
     top: 40px;
-    left: 40px;
+    right: 40px;
     z-index: 10000;
 
     .o_nav-icon {

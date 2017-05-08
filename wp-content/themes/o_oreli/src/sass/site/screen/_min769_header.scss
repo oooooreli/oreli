@@ -4,7 +4,7 @@
   padding: 0;
 &--menu {
     top: 50px;
-    left: 50px;
+    right: 50px;
 
 }
   &--logo {
@@ -13,7 +13,7 @@
     &--details {
       text-align: left;
     position: absolute;
-    right: -35%;
+    right: 15%;
     &:before {
       content:"";
       display:  block;

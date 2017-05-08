@@ -32,5 +32,19 @@
 
 <?php wp_footer(); ?>
 
+<script>
+	jQuery(document).ready(function() {
+/* scroll to */
+		jQuery('.menu-item a').on('click', function() { // Au clic sur un élément
+			var page = jQuery(this).attr('href'); // Page cible
+			var speed = 750; // Durée de l'animation (en ms)
+			jQuery(".site-header--menu-main").toggleClass('active');
+			jQuery('.o_nav-icon').toggleClass('open');
+			jQuery('html, body').delay( 400 ).animate( { scrollTop: jQuery(page).offset().top }, speed ); // Go
+			return false;
+		});
+
+	});
+</script>
 </body>
 </html>

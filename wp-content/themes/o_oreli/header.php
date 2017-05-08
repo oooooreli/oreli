@@ -61,7 +61,7 @@ global $logo_couleur;
 				<?php wp_nav_menu( array( 'theme_location' => 'principal' ) ); ?>
 			</div>
 			<?php include ('template-parts/__rs.php') ?>
-			<div class="rappel"><p class="rappel--logo">aurélie</p>
+			<div class="rappel"><p class="rappel--logo"><a href="<?php echo site_url( '/', null ); ?>">aurélie a.</a></p>
 				<p><strong>intégratrice web.</strong></p>
 			</div>
 				

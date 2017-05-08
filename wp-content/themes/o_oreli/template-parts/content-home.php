@@ -11,18 +11,13 @@
 
 
 
-<section id="apropos" class="section section--apropos">
 
-<div class="container">
-	
 
-  <h2 class="o_title"><?php echo get_field('a_propos')->post_title; ?>
-  </h2>
-  <div class="container-small">
+<section id="apropos" class="section section--apropos ghost-wrap">
+  <div class="container-small ghost-wrap-content">
+  <h2 class="o_title"><?php echo get_field('a_propos')->post_title; ?></h2>
   	 <?php echo get_field('a_propos')->post_content; ?>
   </div>
- 
-</div>
 </section>
 
 <section id="portfolio" class="section section--portfolio">

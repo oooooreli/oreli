@@ -3,8 +3,8 @@
 .site-header {
   padding: 0;
 &--menu {
-    top: 50px;
-    right: 50px;
+    top: 40px;
+    right: 40px;
 
 }
   &--logo {
@@ -32,6 +32,7 @@
     .main_title {
       font-size: 95px;
       line-height: 95px;
+      margin: 70px 0;
     }
     .o_title {text-align: left; }
   }

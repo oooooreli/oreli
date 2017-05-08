@@ -72,14 +72,15 @@
   letter-spacing: -0.31em;
   // width:100%;
   height:100%;
-}
-
-.ghost-wrap::before {
+  &::before {
   content: '';
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
+}
+
+
 
 .ghost-wrap-content {
     width:100%;
@@ -123,7 +124,7 @@
   font-family: $font-title;
   font-style: normal;
   font-weight: 300;
-  text-align: right;
+  text-align: center;
   text-transform: none;
 
 }

@@ -38,6 +38,24 @@
       letter-spacing: 0px;
       line-height: 25px;
       color: $color-main-1;
+
+    &::after {
+      animation: starter 2.5s 1;
+      content:"";
+      display:block;
+      background-color:$color-main-2;
+      height:2px;
+      width:60px;
+      border-radius: 2px;
+
+      position: absolute;
+          bottom: -15px;
+    right: 0; 
+   margin:10px auto ;
+    }    
+
+
+
           &.o_title:after {margin:10px auto ;}
     }
     }

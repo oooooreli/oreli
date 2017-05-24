@@ -15,46 +15,40 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-
-<?php wp_head();
-global $logo_blanc;
-global $logo_couleur;
-?>
-
-
+<?php wp_head();?>
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'o_oreli' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
-
-
-
-			<div class="ghost-wrap">
-
+<section id="masthead" class="site-header" role="banner">
+	<div class="ghost-wrap">
 		<div class="site-header--logo ghost-wrap-content">
-				<h2 class="main_title">aurélie aimard</h2>
-				<div class="site-header--logo--details">
-				<h1 class="o_title">intégratrice<span>web.</span></h1>
-				<?php include ('template-parts/__rs.php') ?>
-				</div>
+			<img class="starter starter--a" src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/themes/o_oreli/dist/img/logo-2.png" alt="" />
+			<div class="site-header--logo--details">
+	
+				<div class="slogan">
+
+			<h1 class="o_title spl--intro">Intégratrice Web</h1>	
+<span class="starter">Je m'appelle Aurélie Aimard, je suis spécialisée dans la création de thème wordPress sur mesure.</span>
 			</div>
+			<span class="starter starter--b">
+				<?php include ('template-parts/__rs.php') ?></span>
 			</div>
+		</div>
+	</div>
+</section><!-- #masthead -->
 
-</header><!-- #masthead -->
+<div class="site-header--hamburger">
+	<div class="o_nav-icon">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>					
+</div>
 
-
-
-			<div class="site-header--menu">
-				<div class="o_nav-icon">
-						<span></span>
-						<span></span>
-						<span></span>
-				</div>					
-			</div>
-<div class="site-header--menu-main">
+<div class="site-header--menu-content">
 	<div class="ghost-wrap">
 		<div class="ghost-wrap-content">
 			<div class="row middle">

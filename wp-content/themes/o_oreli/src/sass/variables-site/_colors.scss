@@ -1,5 +1,8 @@
-$color-main-1: #006;
-$color-main-2: #ffffbc;
+// $color-main-1: #0a174b; /* bleu */
+$color-main-1: blue; /* bleu */
+$color-main-2: #cd3564;
+$color-main-3: #0725ff;
+
 $color-background-body: #fff;
 $color-background-footer: #ffffbc;
 $color-background-site-branding: #323232;
@@ -10,27 +13,39 @@ $color-background-hr: #ccc;
 $color-background-button: #323232;
 $color-background-pre: rgba(0, 0, 0, 0.2);
 $color-background-ins: #fff9c0;
-$color-background-btn-action: #323232;
+
+
 $color-text-screen: #323232;
 $color-text-input: #666;
 $color-text-input-focus: #111;
-$color-link: #006;
-$color-link-visited: #006;
-$color-link-hover: #006;
-$color-text-main: #000066;
-$color-text-main-footer: #000066;
-$color-text-menu: #000066;
-$color-text-price: #5e5e5e;
-$color-text-title: #323232;
+$color-link: #0725ff;
+$color-link-visited: #0725ff;
+$color-link-hover: #0725ff;
+
+$color-text-main: #0725ff;
+$color-text-main: blue;
+
+$color-text-main-footer: #0725ff;
+$color-text-menu: #0725ff;
+
+$color-title:#cd3564;
+
 $color-text-title-header: #fff;
-$color-text-bouton: #fff;
-$color-text-bouton-action: #fff;
-$color-text-slider: #fff;
+
+
+
 $color-text-light: #9e9e9e;
+
+
+
 $color-border-button: #e9e9e9;
 $color-border-button-hover: #ccc #bbb #aaa;
 $color-border-button-focus: #aaa #bbb #bbb;
 $color-border-input: #ccc;
 $color-border-abbr: #666;
 $color-border-light: #e9e9e9;
-$color-border-dark: #ccc;
+
+
+$color-text-bouton: #fff;
+$color-text-bouton-action: #fff;
+$color-background-btn-action: #323232;

@@ -1,0 +1,39 @@
+.section {
+  padding: 50px;
+
+  &--apropos {
+    text-align: center;
+    height: 100vh;
+
+    p {
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 1px;
+    }
+    .o_title {
+      text-align: center;
+      margin: 0 0 80px 0;
+    }
+    h1, h2, h3, h4 {
+      &::after {
+        left: 0;
+        right: 0;
+      }
+    }
+    .container-small {
+      width: 70%;
+      // max-width: 520px;
+      margin: 0 auto;
+      // text-align: left;
+      text-align: center;
+    }
+  }
+
+  @import "min769_section-portfolio";
+
+  &--contact {
+    .o_title {
+      text-align: left;
+    }
+  }
+}

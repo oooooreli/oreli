@@ -1,0 +1,40 @@
+&--apropos {
+  background-color: #ffff99;
+  background-color: #0a174b;
+  color: #fff;
+
+  h5 {
+    margin: 60px 0 30px;
+  }
+  .competences {
+    h3 {
+      font-weight: 700;
+      margin: 0 0 30px 0;
+      // padding: 0;
+    }
+    margin-bottom: 60px;
+    margin-top: 20px;
+
+    > div > div {
+      margin-bottom: 30px;
+    }
+  }
+  img {
+    -webkit-transition: all .6s ease-in;
+    -moz-transition: all .6s ease-in;
+    -o-transition: all .6s ease-in;
+    transition: all .6s ease-in;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    margin: 0px 20px 0px 0;
+    height: 35px;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+
+    &:hover {
+      -webkit-filter: grayscale(1);
+      filter: grayscale(1);
+    }
+  }
+}

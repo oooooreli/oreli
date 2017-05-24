@@ -46,5 +46,47 @@
 
 	});
 </script>
+
+
+
+		<!-- <script src="js/main.js"></script> -->
+		<script>
+		(function() {
+			var tiltSettings = [
+			{},
+
+	
+			];
+
+			function init() {
+				var idx = 0;
+				[].slice.call(document.querySelectorAll('a.tilter')).forEach(function(el, pos) { 
+					idx = pos%2 === 0 ? idx+1 : idx;
+					new TiltFx(el, tiltSettings[idx-1]);
+				});
+			}
+
+			// Preload all images.
+			imagesLoaded(document.querySelector('main'), function() {
+				document.body.classList.remove('loading');
+				init();
+			});
+		})();
+		</script>
+
+
+
+
+
+				<script>
+			AOS.init({
+				easing: 'ease-out-back',
+				duration: 1000
+			});
+		</script>
+
+
+
+
 </body>
 </html>

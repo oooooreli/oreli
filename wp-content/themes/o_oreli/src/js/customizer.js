@@ -19,6 +19,7 @@ function parallax(){
 }
 
 
+
 jQuery(window).scroll(function() {
 
   /* Declenche element au scroll */  
@@ -55,6 +56,28 @@ jQuery(window).scroll(function() {
 
 
 ( function( $ ) {
+
+
+$('.home').addClass('tilt');
+$('.tilt .projet').on('click', function()   {
+  $('.home').removeClass('tilt');
+  // $(this).find('svg').removeClass('tilter__image');
+  // $(this).find('figure').removeClass('tilter__figure');
+  // $(this).find('figcaption').removeClass('tilter__caption');
+  // $(this).find('> span').removeClass('tilter');
+  console.log('yatavvv');
+
+});
+
+$('.card__btn-close').on('click', function()   {
+  // ('.home').addClass('tilt');
+  // $('.projet svg').addClass('tilter__image');
+  // $('.projet figure').addClass('tilter__figure');
+  // $('.projet figcaption').addClass('tilter__caption');
+  // $('.projet > span').addClass('tilter');
+  console.log('yata close');
+
+});
 
 /* SCROLLIFFY */
 $.scrollify({
@@ -122,5 +145,30 @@ $('.spl--word').each(function () {
 
 
 
+
+
+
+
+
+
+
 } )( jQuery );
 
+
+
+
+
+
+
+    jQuery(document).ready(function ($) {
+
+
+
+
+
+
+
+
+
+
+    });

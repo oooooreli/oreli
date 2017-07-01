@@ -22,7 +22,7 @@
       transition: all 1.5s;
     }
     &:hover {
-      img {
+      img, svg {
         opacity: 0.95;
         -webkit-filter: grayscale(0) contrast(1.2);
         filter: grayscale(0) contrast(1.2);

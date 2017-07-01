@@ -5,8 +5,8 @@
 
 /*  thumbnail
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-add_image_size( 'alaune', 1680, 408, array( 'center', 'center' ) ); // Hard crop left top
-add_image_size( 'portfolio', 845, 490, array( 'center', 'center' ) ); // Hard crop left top
+// add_image_size( 'alaune', 1920, 500, array( 'center', 'center' ) ); // Hard crop left top
+add_image_size( 'portfolio', 1920, 500, array( 'center', 'center' ) ); // Hard crop left top
 
 
 

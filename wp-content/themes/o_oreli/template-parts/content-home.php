@@ -13,6 +13,7 @@
 
 
 
+
 <section id="apropos" class="section section--apropos ghost-wrap">
   <div class="container-small ghost-wrap-content">
   <h2 class="o_title"><?php echo get_field('a_propos')->post_title; ?></h2>
@@ -91,3 +92,4 @@ Voir mon portfolio <br> <i class="fa fa-angle-double-down" aria-hidden="true"></
   </p>
   </div>
 </section>
+

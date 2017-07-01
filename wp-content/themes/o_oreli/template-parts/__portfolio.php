@@ -1,57 +1,45 @@
 <!-- <div class="container">
 <h2 class="o_title">Portfolio</h2>
 </div> -->
-	<div  id="portfolio-full">
+
+  <!--  -->
 
 
-<!-- <div class="work--item">
-        <a href="#" class="tilter tilter--1">
-          <figure class="tilter__figure">
-            <img class="tilter__image" src="http://127.0.0.1/oreli/wp-content/uploads/2017/05/psb-845x490.jpg" alt="img01" />
-            <div class="tilter__deco tilter__deco--shine"><div></div></div>
-            <figcaption class="tilter__caption">
-              <h3 class="tilter__title">ggTanya Bondesta</h3>
-              <p class="tilter__description">Toronto</p>
-            </figcaption>
-
-            </svg>
-          </figure>
-        </a>
-
-        </div> -->
-
-<!--
-
-<figure class="projet effect-apollo">
-            <img src="http://epicadesign.fr/demos/HoverEffectImg/img/18.jpg" alt="img18">
-            <figcaption>
-              <h2>Strong <span>Apollo</span></h2>
-              <p>Apollo's last game of pool was so strange.</p>
-              <a href="#">View more</a>
-            </figcaption>     
-          </figure>
-
--->
+    <script>
+  if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+    var root = document.getElementsByTagName('html')[0];
+    root.setAttribute('class', 'ff');
+  };
+  </script>
 
   
+	<div  id="portfolio-full" style="position:relative;">
+
+
 <?php 
 $posts = get_field('home_list-projets');
 if( $posts ): ?>
   <!--   <ul> -->
-    <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+    <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT)  ?>
         <?php setup_postdata($post); ?>
 
 
-
-
-
-<div class="projet __projet--waiting __smooth" >
-<a href="#" class="tilter tilter--2">
-  <figure class="tilter__figure" >
+<div class="projet card  __projet--waiting __smooth" >
+<span class="tilter tilter--2">
+  <figure class="card__container card__container--closed tilter__figure" >
     <div class="tilter__deco tilter__deco--shine"><div></div></div>
-    <img class="tilter__image" src="<?php if ( has_post_thumbnail() ) {the_post_thumbnail_url('portfolio');}?>" alt="img03" />
+    <!-- <img class="tilter__image" src="<?php if ( has_post_thumbnail() ) {the_post_thumbnail_url('portfolio');}?>" alt="img03" /> -->
+                <svg class="card__image tilter__image " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <clipPath id="clipPath<?php  echo $post->ID;  ?>">
+                  <circle class="clip" cx="960" cy="250" r="992"></circle>
+                </clipPath>
+              </defs>
+              <image clip-path="url(#clipPath<?php  echo $post->ID;  ?>)" width="1920" height="500" xlink:href="<?php if ( has_post_thumbnail() ) {the_post_thumbnail_url('portfolio');}?>"></image>
+               </svg>
     <div class="tilter__deco tilter__deco--overlay"></div>
-    <figcaption class="tilter__caption">
+    <figcaption class="card__content tilter__caption">
+      <i class="card__btn-close fa fa-times"></i>
      <?php the_title( '<h6 class="projet--infos-titre anime">', '</h6>', true ); ?>
        <!-- <h6 class="tilter__title projet--infos-titre anime">Helen Portland</h6> -->
         <span class="projet--infos-dom"><?php the_field('projet_dom'); ?></span>
@@ -78,7 +66,7 @@ if( $posts ): ?>
     </figcaption>
 
   </figure>
-</a>
+</span>
 </div>
 
 

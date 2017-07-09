@@ -27,6 +27,7 @@ if( $posts ): ?>
 <div class="projet card  __projet--waiting __smooth" >
 <span class="tilter tilter--2">
   <figure class="card__container card__container--closed tilter__figure" >
+      <i class="card__btn-close fa fa-times"></i>
     <div class="tilter__deco tilter__deco--shine"><div></div></div>
     <!-- <img class="tilter__image" src="<?php if ( has_post_thumbnail() ) {the_post_thumbnail_url('portfolio');}?>" alt="img03" /> -->
                 <svg class="card__image tilter__image " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
@@ -39,10 +40,11 @@ if( $posts ): ?>
                </svg>
     <div class="tilter__deco tilter__deco--overlay"></div>
     <figcaption class="card__content tilter__caption">
-      <i class="card__btn-close fa fa-times"></i>
+       <div class="bandeau">
      <?php the_title( '<h6 class="projet--infos-titre anime">', '</h6>', true ); ?>
        <!-- <h6 class="tilter__title projet--infos-titre anime">Helen Portland</h6> -->
         <span class="projet--infos-dom"><?php the_field('projet_dom'); ?></span>
+         
         <ul class="projet--infos-techno">
         <?php $projet_types = get_field('projet_type');
         if( $projet_types ): ?>
@@ -63,8 +65,18 @@ if( $posts ): ?>
           <?php endforeach; ?>
         <?php endif; ?>
         </ul>
+       </div>
+        <div class="projet--infos-complete">
+        <div class="text ib ib-2">
+          <div><?php the_content(); ?><a class="btn" href="">voir le site en live</a></div>
+          <div>
+          <img class="projet--infos-complete__mockup" src="<?php echo get_field('projet_mockup')['url']; ?>" /></div>
+        </div>
+        <div class="screen">
+        <img class="projet--infos-complete__screen" src="<?php echo get_field('projet_screenshot')['url']; ?>" /> 
+        </div>
+        </div>
     </figcaption>
-
   </figure>
 </span>
 </div>

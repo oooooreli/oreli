@@ -56,15 +56,15 @@
 	position: fixed;
 	z-index: 10000;
 	top: 20px;
-	right: 20px;
+	left: 20px;
 
 	.o_nav-icon {
 		// width: 80px;
-		border: 1px solid #dedede;
-		background-color: #ffffff;
+		// border: 1px solid #dedede;
+		background-color: rgba(255,255,255,.5);
 		border-radius: 50%;
-		width: 60px;
-		height: 60px;
+    width: 50px;
+    height: 50px;
 		text-align: center;
 		padding: 15px 7px;
 		cursor: pointer;
@@ -109,14 +109,14 @@
 		transform-origin: left center;
 	}
 	.o_nav-icon span:nth-child(2) {
-		top: 24px;
+		top: 22px;
 		-webkit-transform-origin: left center;
 		-moz-transform-origin: left center;
 		-o-transform-origin: left center;
 		transform-origin: left center;
 	}
 	.o_nav-icon span:nth-child(3) {
-		top: 36px;
+		top: 32px;
 		-webkit-transform-origin: left center;
 		-moz-transform-origin: left center;
 		-o-transform-origin: left center;

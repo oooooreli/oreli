@@ -61,43 +61,28 @@ jQuery(window).scroll(function() {
 $('.home').addClass('tilt');
 $('.tilt .projet').on('click', function()   {
   $('.home').removeClass('tilt');
-  // $(this).find('svg').removeClass('tilter__image');
-  // $(this).find('figure').removeClass('tilter__figure');
-  // $(this).find('figcaption').removeClass('tilter__caption');
-  // $(this).find('> span').removeClass('tilter');
-  console.log('yatavvv');
-
 });
 
-$('.card__btn-close').on('click', function()   {
-  // ('.home').addClass('tilt');
-  // $('.projet svg').addClass('tilter__image');
-  // $('.projet figure').addClass('tilter__figure');
-  // $('.projet figcaption').addClass('tilter__caption');
-  // $('.projet > span').addClass('tilter');
-  console.log('yata close');
-
-});
 
 /* SCROLLIFFY */
-$.scrollify({
-		section : "section",
-		sectionName : "section-name",
-		interstitialSection : "",
-		easing: "easeOutExpo",
-		scrollSpeed: 1000,
-		offset : 0,
-		scrollbars: true,
-		standardScrollElements: "",
-		setHeights: true,
-		overflowScroll: true,
-		updateHash: true,
-		touchScroll:true,
-		before:function() {},
-		after:function() {},
-		afterResize:function() {},
-		afterRender:function() {}
-	});
+// $.scrollify({
+// 		section : ".page-template-tpl-home.tilt .slide",
+// 		sectionName : "section-name",
+// 		interstitialSection : "",
+// 		easing: "easeOutExpo",
+// 		scrollSpeed: 1000,
+// 		offset : 0,
+// 		scrollbars: true,
+// 		standardScrollElements: "",
+// 		setHeights: true,
+// 		overflowScroll: true,
+// 		updateHash: true,
+// 		touchScroll:true,
+// 		before:function() {},
+// 		after:function() {},
+// 		afterResize:function() {},
+// 		afterRender:function() {}
+// 	});
 
 
 			

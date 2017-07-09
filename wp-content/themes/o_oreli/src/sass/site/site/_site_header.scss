@@ -20,7 +20,19 @@
 
 
   &--logo {
-    text-align: right;
+    text-align: center;
+    &--name {
+      
+    color: blue;
+
+    letter-spacing: initial;
+    font-size: 105px;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Slab", sans-serif;
+    font-weight: 300;
+    }
 
     .slogan {
       max-width: 308px;
@@ -39,20 +51,20 @@
       line-height: 25px;
       color: $color-main-1;
 
-    &::after {
-      animation: starter 2.5s 1;
-      content:"";
-      display:block;
-      background-color:$color-main-2;
-      height:2px;
-      width:60px;
-      border-radius: 2px;
+   //  &::after {
+   //    animation: starter 2.5s 1;
+   //    content:"";
+   //    display:block;
+   //    background-color:$color-main-2;
+   //    height:2px;
+   //    width:60px;
+   //    border-radius: 2px;
 
-      position: absolute;
-          bottom: -15px;
-    right: 0; 
-   margin:10px auto ;
-    }    
+   //    position: absolute;
+   //        bottom: -15px;
+   //  right: 0; 
+   // margin:10px auto ;
+   //  }    
 
 
 

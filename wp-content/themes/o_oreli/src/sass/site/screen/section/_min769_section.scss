@@ -32,6 +32,20 @@
   @import "min769_section-portfolio";
 
   &--contact {
+
+
+
+
+    .container {
+
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-50%);
+    left: 0;
+    right: 0;
+
+    } 
+
     .o_title {
       text-align: left;
     }

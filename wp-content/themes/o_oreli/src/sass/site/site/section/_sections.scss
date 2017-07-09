@@ -12,9 +12,9 @@
   &:first-child {
     margin-top: 100vh;
   }
-  &:last-child {
-    margin-bottom: 100vh;
-  }
+/*   &:last-child {
+  margin-bottom: 100vh;
+} */
 
 @import 'section-apropos';
 @import 'section-portfolio';

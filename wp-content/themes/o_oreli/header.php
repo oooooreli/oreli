@@ -19,6 +19,8 @@
 </head>
 
 <body <?php body_class(); ?>>
+<div class="triangle o_deco--sub plusla"></div>
+<div class="triangle o_deco--light ici"></div>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'o_oreli' ); ?></a>
 

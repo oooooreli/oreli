@@ -1,4 +1,3 @@
-
 /* VISIBLE */
 function checkVisible( elm, eval ) {
     eval = eval || "visible";
@@ -11,17 +10,13 @@ function checkVisible( elm, eval ) {
     if (eval == "above") return ((y < (vpH + st)));
 }
 
-
 /* PARALLAXE */
 function parallax(){
   var scrolled = jQuery(window).scrollTop();
   jQuery('.parallaxe').css('top',-(scrolled*0.2)+'px');
 }
 
-
-
 jQuery(window).scroll(function() {
-
   /* Declenche element au scroll */  
   	jQuery('section .o_title, .anime').each(function(){		
   	   if (checkVisible(jQuery(this))) {
@@ -29,65 +24,118 @@ jQuery(window).scroll(function() {
   			jQuery(this).find('.spl--letter').css({"transform":"matrix(1, 0, 0, 1, 0, 0)","filter":"blur(0)"});
   		}
   	});   
-
-    /* Declenche element au scroll */  
+  /* Declenche element au scroll */  
     jQuery('section .projet--infos-dom,section .projet--infos-techno').each(function(){   
        if (checkVisible(jQuery(this))) {
         jQuery(this).css({ "animation":"starter 1.5s"});
-      
       }
     });
-
-
-        /* Declenche element au scroll */  
+  /* Declenche element au scroll */  
     jQuery('.projet').each(function(){   
        if (checkVisible(jQuery(this))) {
         jQuery(this).removeClass("projet--waiting"); 
-
       }
     }); 
-
+  /* Declenche element au scroll */  
+    jQuery('.section--portfolio').each(function(){   
+       if (checkVisible(jQuery(this))) {
+        // jQuery('.triangle').addClass('none'); 
+          $(".triangle").css({'opacity':'0'});
+      }
+    });     
 // if (window.matchMedia("(min-width: 800px)").matches) {
 //   parallax();    
 // }
-
 });
-
 
 
 ( function( $ ) {
-
+function o_scrollify(){
+console.log('00');
+$.scrollify({
+    section : "body.tilt .slide",
+    sectionName : "section-name",
+    interstitialSection : "",
+    easing: "easeOutExpo",
+    scrollSpeed: 1000,
+    offset : 0,
+    scrollbars: true,
+    standardScrollElements: "",
+    setHeights: true,
+    overflowScroll: true,
+    updateHash: true,
+    touchScroll:true,
+    before:function() {
+      $(".triangle").toggleClass('ici');
+      $(".triangle").toggleClass('plusla');
+    },
+    after:function() {
+      // $(".triangle").removeClass('none');
+      $(".triangle").css({'opacity':'1'});
+      console.log('b');
+    },
+    afterResize:function() {console.log('c');},
+    afterRender:function() {console.log('d');}
+  });
+}
 
 $('.home').addClass('tilt');
-$('.tilt .projet').on('click', function()   {
-  $('.home').removeClass('tilt');
+o_scrollify();
+// $('.tilt .tilter').on('click', function() {
+//   $('.home').removeClass('tilt');
+//   $('.triangle').remove();
+//   $.scrollify.disable();
+// });
+
+
+/* NEW CARD EXPAND */
+
+
+
+
+$('.projet .tilter').on('click', function() {
+
+jQuery('.projet').each(function(){   
+   $(this).find('span').toggleClass('remove');
+   // $(this).find('.card__content').prependTo('.projet--infos-complete');
+}); 
+  $('.home').toggleClass('body--close');
+  $.scrollify.disable();
+  $(this).parent().find('.projet__complete').toggleClass('reveal');
+
+
 });
 
 
-/* SCROLLIFFY */
-// $.scrollify({
-// 		section : ".page-template-tpl-home.tilt .slide",
-// 		sectionName : "section-name",
-// 		interstitialSection : "",
-// 		easing: "easeOutExpo",
-// 		scrollSpeed: 1000,
-// 		offset : 0,
-// 		scrollbars: true,
-// 		standardScrollElements: "",
-// 		setHeights: true,
-// 		overflowScroll: true,
-// 		updateHash: true,
-// 		touchScroll:true,
-// 		before:function() {},
-// 		after:function() {},
-// 		afterResize:function() {},
-// 		afterRender:function() {}
-// 	});
+$('.projet .closet').on('click', function() {
+ setTimeout(function(){
+  // alert("Hello"); 
+  $('.home').toggleClass('body--close');
+
+}, 800);
+
+  $.scrollify.enable();
+  $('.projet__complete').removeClass('reveal');
+
+jQuery('.projet').each(function(){   
+   $(this).find('span').toggleClass('remove');
+}); 
 
 
-			
-/* LETTER */
-			
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
 /* LETTER */
 $('.o_title, .anime').each(function () {
     var characters = $(this).text().split(" ");
@@ -109,13 +157,6 @@ $('.spl--word').each(function () {
 
 
 
-
-
-
-
-
-
-
 /* MENU */
 	$( ".site-header--hamburger" ).click(function() {
 	 	$(".site-header--menu-content").toggleClass('active');
@@ -128,32 +169,10 @@ $('.spl--word').each(function () {
 	});
 
 
-
-
-
-
-
-
-
-
-
 } )( jQuery );
 
 
 
 
-
-
-
-    jQuery(document).ready(function ($) {
-
-
-
-
-
-
-
-
-
-
-    });
+jQuery(document).ready(function ($) {
+});

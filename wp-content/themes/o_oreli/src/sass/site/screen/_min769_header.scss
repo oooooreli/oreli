@@ -1,3 +1,85 @@
+// .triangle.none {
+//   opacity:0;
+//   transition: opacity .9s, top .9s,right .9s,bottom .9s,left .9s ;
+// }
+.triangle.plusla {
+  right:-500px;
+  opacity:1;
+  transition: opacity .9s, top .9s,right .9s,bottom .9s,left .9s ;
+&::after, &::before {opacity: 0;}
+} 
+.triangle.ici {
+  right:0;
+  opacity:1;
+  transition: opacity .9s, top .9s,right .9s,bottom .9s,left .9s ;
+  // transition: all .9s ;
+  // &.none {opacity: 0;}
+
+&::after, &::before {opacity: 1;}
+} 
+
+.triangle {
+  pointer-events:none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  transition: opacity .9s, top .9s,right .9s,bottom .9s,left .9s ;
+  &::after, &::before {
+    // top: 0;
+    // left: 0;
+    // bottom: 0;
+    // right: 0;
+    width: 0;
+    height: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    border-style: solid;
+    transition: opacity .9s, top .9s,right .9s,bottom .9s,left .9s ;
+  }
+}
+
+.o_deco--sub.ici {
+  &::after { 
+    bottom: 0;
+    left: 0;
+    top:initial;
+    right:initial;
+    border-width: 20px 0 0 500px;
+    border-color: transparent transparent transparent blue;
+  }
+  &::before {
+    top: 0;
+    right: 0;
+    bottom:initial;
+    left:initial;
+    border-width: 0 500px 20px 0;
+    border-color: transparent blue transparent transparent;
+  }
+}
+
+.o_deco--light.ici {
+  &::after { 
+    top: 0;
+    left: 0;
+    top:initial;
+    right:initial;
+  border-width: 20px 500px 0 0;
+border-color: #0000ff transparent transparent transparent;}
+  &::before {
+    bottom: 0;
+    right: 0;
+    top:initial;
+    left:initial;
+  border-width: 0 0 20px 500px;
+border-color: transparent transparent #0000ff transparent;
+ }
+}
+
+
 /* Header
 ------------------------- */
 .site-header {

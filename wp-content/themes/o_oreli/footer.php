@@ -47,17 +47,12 @@
 	});
 </script>
 
-
-
-		<!-- <script src="js/main.js"></script> -->
+<!-- <script src="js/main.js"></script> -->
 		<script>
 		(function() {
 			var tiltSettings = [
 			{},
-
-	
 			];
-
 			function init() {
 				var idx = 0;
 				[].slice.call(document.querySelectorAll('span.tilter')).forEach(function(el, pos) { 
@@ -65,7 +60,6 @@
 					new TiltFx(el, tiltSettings[idx-1]);
 				});
 			}
-
 			// Preload all images.
 			imagesLoaded(document.querySelector('main'), function() {
 				document.body.classList.remove('loading');
@@ -74,19 +68,11 @@
 		})();
 		</script>
 
-
-
-
-
-				<script>
+		<script>
 			AOS.init({
 				easing: 'ease-out-back',
 				duration: 1000
 			});
 		</script>
-
-
-
-
 </body>
 </html>

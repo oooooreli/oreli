@@ -1,6 +1,34 @@
 &--apropos {
 
-  
+//     &::after {
+
+// width: 0;
+// height: 0;
+// border-style: solid;
+// border-width: 0 0 20px 500px;
+// border-color: transparent transparent #0000ff transparent;
+// content:"";
+// position: absolute;
+// bottom: 0;
+// right: 0;
+// display:block;
+//   }
+
+//   &::before {
+// content:"";
+// position: absolute;
+// top: 0;
+// left: 0;
+// display:block;
+
+
+// width: 0;
+// height: 0;
+// border-style: solid;
+// border-width: 20px 500px 0 0;
+// border-color: #0000ff transparent transparent transparent;
+
+//  }
 
     background-color: #677BC7;
     background-color: #3E529E;
@@ -8,7 +36,8 @@
     background-color: #151161;
   background-color: #ffff99;
   background-color: $color-background-blue;
-  color: #fff;
+  background-color: #fff;
+  color: blue;
 
  //      background-color: #ffffff;
  //    border-top: 1px solid $color-background-blue; 

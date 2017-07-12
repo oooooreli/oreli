@@ -107,13 +107,13 @@ add_action( 'widgets_init', 'o_oreli_widgets_init' );
 function o_oreli_scripts() {
 
 
-wp_enqueue_script( 'o_cdn_trianglify', 'https://cdnjs.cloudflare.com/ajax/libs/trianglify/1.0.1/trianglify.min.js', null, null, true );
-wp_enqueue_script( 'o_cdn_TweenMax', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js', null, null, true );
+// wp_enqueue_script( 'o_cdn_trianglify', 'https://cdnjs.cloudflare.com/ajax/libs/trianglify/1.0.1/trianglify.min.js', null, null, true );
+// wp_enqueue_script( 'o_cdn_TweenMax', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js', null, null, true );
 wp_enqueue_script( 'o_cdn_cash', 'https://cdnjs.cloudflare.com/ajax/libs/cash/1.3.5/cash.min.js', null, null, true );
 
 
-wp_enqueue_script( 'o_card', get_template_directory_uri(). '/src/js/Card.js', null, null, true );
-wp_enqueue_script( 'o_circle', get_template_directory_uri(). '/src/js/Card-circle.js', null, null, true );
+// wp_enqueue_script( 'o_card', get_template_directory_uri(). '/src/js/Card.js', null, null, true );
+// wp_enqueue_script( 'o_circle', get_template_directory_uri(). '/src/js/Card-circle.js', null, null, true );
 
 
 wp_enqueue_script( 'o_cdn_aos-js', 'https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js', null, null, true );

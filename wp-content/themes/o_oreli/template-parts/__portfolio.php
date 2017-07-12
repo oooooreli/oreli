@@ -1,20 +1,11 @@
-<!-- <div class="container">
-<h2 class="o_title">Portfolio</h2>
-</div> -->
+<div class="container">
+<h2 class="o_title">portfolio</h2>
+</div>
 
-  <!--  -->
-
-
-    <script>
-  if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
-    var root = document.getElementsByTagName('html')[0];
-    root.setAttribute('class', 'ff');
-  };
-  </script>
 
   
 	<div  id="portfolio-full" style="position:relative;">
-
+<!-- __projet--waiting __smooth -->
 
 <?php 
 $posts = get_field('home_list-projets');
@@ -24,7 +15,7 @@ if( $posts ): ?>
         <?php setup_postdata($post); ?>
 
 
-<div class="projet card  __projet--waiting __smooth" >
+<div class="projet card" >
 <span class="tilter tilter--2">
   <figure class="card__container card__container--closed tilter__figure" >
       <i class="card__btn-close fa fa-times"></i>
@@ -66,20 +57,30 @@ if( $posts ): ?>
         <?php endif; ?>
         </ul>
        </div>
-        <div class="projet--infos-complete">
+    </figcaption>
+  </figure>
+
+
+</span>
+
+<div class="projet__complete">  
+<img src="<?php if ( has_post_thumbnail() ) {the_post_thumbnail_url('portfolio');}?>">
+      <i class="closet card__btn-close fa fa-times"></i>
+    <div class="projet--infos-complete">
         <div class="text ib ib-2">
-          <div><?php the_content(); ?><a class="btn" href="">voir le site en live</a></div>
+          <div>    <?php the_title( '<h6 class="projet--infos-titre anime">', '</h6>', true ); ?><?php the_content(); ?><a class="btn" href="">voir le site en live</a></div>
           <div>
           <img class="projet--infos-complete__mockup" src="<?php echo get_field('projet_mockup')['url']; ?>" /></div>
         </div>
         <div class="screen">
         <img class="projet--infos-complete__screen" src="<?php echo get_field('projet_screenshot')['url']; ?>" /> 
         </div>
-        </div>
-    </figcaption>
-  </figure>
-</span>
+    </div>
 </div>
+
+
+</div>
+
 
 
     <?php endforeach; ?>

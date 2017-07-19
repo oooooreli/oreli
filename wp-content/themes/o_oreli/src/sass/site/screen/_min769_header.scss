@@ -2,6 +2,28 @@
 //   opacity:0;
 //   transition: opacity .9s, top .9s,right .9s,bottom .9s,left .9s ;
 // }
+
+
+@keyframes moveTtriangleGauche {
+    0%,50%   {
+      left:-100%
+    }
+
+    100% {
+    left:0;
+    }
+}
+@keyframes moveTtriangleDroite {
+    0%,50%   {
+      right:-100%
+    }
+
+    100% {
+    right:0;
+    }
+}
+
+
 .triangle.plusla {
   right:-500px;
   opacity:1;
@@ -9,6 +31,7 @@
 &::after, &::before {opacity: 0;}
 } 
 .triangle.ici {
+
   right:0;
   opacity:1;
   transition: opacity .9s, top .9s,right .9s,bottom .9s,left .9s ;
@@ -44,6 +67,7 @@
 
 .o_deco--sub.ici {
   &::after { 
+      animation: moveTtriangleGauche 2s 1;
     bottom: 0;
     left: 0;
     top:initial;
@@ -52,6 +76,7 @@
     border-color: transparent transparent transparent blue;
   }
   &::before {
+    animation: moveTtriangleDroite 2s 1;
     top: 0;
     right: 0;
     bottom:initial;
@@ -68,14 +93,14 @@
     top:initial;
     right:initial;
   border-width: 20px 500px 0 0;
-border-color: #0000ff transparent transparent transparent;}
+border-color: blue transparent transparent transparent;}
   &::before {
     bottom: 0;
     right: 0;
     top:initial;
     left:initial;
   border-width: 0 0 20px 500px;
-border-color: transparent transparent #0000ff transparent;
+border-color: transparent transparent blue transparent;
  }
 }
 
@@ -111,7 +136,13 @@ border-color: transparent transparent #0000ff transparent;
     }
   }
   .fa {
-    font-size: 40px;
-    padding: 80px 10px 0 10px;
+        font-size: 50px;
+    padding: 10px 30px;
+          transform: scale(0.8);
+      transition: all 0.3s;
+      &:hover {
+      transform: scale(1);
+
+      }
   }
 }

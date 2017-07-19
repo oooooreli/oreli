@@ -1,3 +1,3 @@
-				<i class="fa fa-linkedin" aria-hidden="true"></i>
-				<i class="fa fa-twitter" aria-hidden="true"></i>
-				<i class="fa fa-pinterest" aria-hidden="true"></i>
+				<a href="https://www.linkedin.com/in/aurélie-aimard-636b11124/" title="linkedin" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				<a href="https://twitter.com/oreli_aimard" title="twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a href="http://www.pinterest.com/aurelieaimard/" title="pinterest" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a>

@@ -7,6 +7,11 @@
   position: relative;
   text-align: center;
   z-index: 10;
+        padding: 30vh 0 10vh 0;
+          p {
+      margin: 30px;
+    letter-spacing: 1px;
+      }
 
   .fa {
     color: $color-main-1;
@@ -75,11 +80,7 @@
         display: block;
       }
 
-      p {
-        font-size: 20px;
-        font-weight: bold;
-        line-height: 22px;
-      }
+  
     }
   }
 }

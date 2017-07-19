@@ -125,14 +125,14 @@ h1, h2, h3, h4, h5 {
 ------------------------- */
 %btn, .btn {
   border: 1px solid $color-border-button;
-  border-radius: 4px;
   display: inline-block;
   font-family: $font-btn;
-  font-style: 16px;
+  font-size: 16px;
   font-weight: bold;
   padding: 20px;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: none;
+  background-color: transparent;
 
   &.action {
 

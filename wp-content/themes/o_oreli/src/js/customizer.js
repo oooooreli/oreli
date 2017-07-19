@@ -14,7 +14,12 @@ function checkVisible( elm, eval ) {
 function parallax(){
   var scrolled = jQuery(window).scrollTop();
   jQuery('.parallaxe').css('top',-(scrolled*0.2)+'px');
+  jQuery('.parallaxe--bottom').css('bottom',(scrolled*0.02)+'px');
 }
+
+
+
+
 
 jQuery(window).scroll(function() {
   /* Declenche element au scroll */  
@@ -30,28 +35,27 @@ jQuery(window).scroll(function() {
         jQuery(this).css({ "animation":"starter 1.5s"});
       }
     });
-  /* Declenche element au scroll */  
-    jQuery('.projet').each(function(){   
-       if (checkVisible(jQuery(this))) {
-        jQuery(this).removeClass("projet--waiting"); 
-      }
-    }); 
+
   /* Declenche element au scroll */  
     jQuery('.section--portfolio').each(function(){   
        if (checkVisible(jQuery(this))) {
-        // jQuery('.triangle').addClass('none'); 
           $(".triangle").css({'opacity':'0'});
       }
-    });     
-// if (window.matchMedia("(min-width: 800px)").matches) {
-//   parallax();    
-// }
+    });  
+
+
+
+
+ 
+   
+if (window.matchMedia("(min-width: 800px)").matches) {
+  parallax();    
+}
 });
 
 
 ( function( $ ) {
 function o_scrollify(){
-console.log('00');
 $.scrollify({
     section : "body.tilt .slide",
     sectionName : "section-name",
@@ -70,25 +74,22 @@ $.scrollify({
       $(".triangle").toggleClass('plusla');
     },
     after:function() {
-      // $(".triangle").removeClass('none');
       $(".triangle").css({'opacity':'1'});
-      console.log('b');
     },
     afterResize:function() {console.log('c');},
     afterRender:function() {console.log('d');}
   });
 }
 
-$('.home').addClass('tilt');
+
+  $('.home').addClass('tilt');
 o_scrollify();
-// $('.tilt .tilter').on('click', function() {
-//   $('.home').removeClass('tilt');
-//   $('.triangle').remove();
-//   $.scrollify.disable();
-// });
 
 
 /* NEW CARD EXPAND */
+
+
+
 
 
 
@@ -97,7 +98,6 @@ $('.projet .tilter').on('click', function() {
 
 jQuery('.projet').each(function(){   
    $(this).find('span').toggleClass('remove');
-   // $(this).find('.card__content').prependTo('.projet--infos-complete');
 }); 
   $('.home').toggleClass('body--close');
   $.scrollify.disable();
@@ -161,12 +161,18 @@ $('.spl--word').each(function () {
 	$( ".site-header--hamburger" ).click(function() {
 	 	$(".site-header--menu-content").toggleClass('active');
 	});
-	$( ".site-header--menu-content a" ).click(function() {
-	 	$(".site-header--menu-content").toggleClass('active');
-	});
+  $( ".site-header--menu-content a" ).click(function() {
+    $(".site-header--menu-content").toggleClass('active');
+  });	
 	$('.o_nav-icon').click(function(){
 		$(this).toggleClass('open');
 	});
+
+
+
+
+
+
 
 
 } )( jQuery );

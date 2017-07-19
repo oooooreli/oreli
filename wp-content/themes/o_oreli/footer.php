@@ -19,13 +19,15 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<?php if($check_logo): ?>
-				<img src="<?php if($logo_couleur) { echo $logo_couleur; }?>" alt="<?php echo get_bloginfo('name'); ?>">
+				<p><img src="<?php if($logo_couleur) { echo $logo_couleur; }?>" alt="<?php echo get_bloginfo('name'); ?>"></p>
 			<?php endif; ?>
 			<?php if($check_slogan): ?>
 				<?php echo get_bloginfo('description'); ?>
 			<?php endif; ?>
-			<?php if($footer_slogan_bis) { echo $footer_slogan_bis; }?>
+			<?php if($footer_slogan_bis) { echo "<p>".$footer_slogan_bis."</p>"; }?>
 			<?php wp_nav_menu( array( 'theme_location' => 'menu_footer') ); ?>
+			Orèli - © <?php echo date("Y"); ?>
+	
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

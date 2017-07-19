@@ -19,16 +19,16 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div class="triangle o_deco--sub plusla"></div>
-<div class="triangle o_deco--light ici"></div>
+<div class="triangle o_deco--sub ici"></div>
+<div class="triangle o_deco--light plusla"></div>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'o_oreli' ); ?></a>
 
-<section id="masthead" class="slide site-header" role="banner">
+<section id="masthead" class="slide site-header parallaxe" data-section-name="intro" role="banner">
 	<div class="ghost-wrap">
 		<div class="site-header--logo ghost-wrap-content">
-		<h1 class="site-header--logo--name starter starter--a">aurélie</h1>
-			<img style="display:none;" class="starter starter--a" src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/themes/o_oreli/dist/img/logo-2.png" alt="" />
+		<h1 style="display:none;"  class="site-header--logo--name starter starter--a">aurélie</h1>
+			<img  alt="aurélie" class="starter starter--a" src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/themes/o_oreli/dist/img/logo-2.png" alt="" />
 			<div class="site-header--logo--details">
 	
 				<div class="slogan">

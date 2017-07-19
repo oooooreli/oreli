@@ -12,5 +12,20 @@
         min-width: 65vw;
       }
     }
+
+      .projet--infos-complete {
+          .titre {
+    padding: 50px 50px 0 50px;
+  }
+
+          .text {
+    padding: 0 50px 50px 50px;
+  }
+    img.projet--infos-complete__screen {
+    max-width: 50%;
+
+  }
+
+      }
   }
 }
